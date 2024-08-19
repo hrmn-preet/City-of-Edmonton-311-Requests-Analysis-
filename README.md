@@ -1,5 +1,4 @@
-# Geospatial Analysis & Forecasting Service Request Volumes
-
+# Geospatial Analysis & Forecasting Service Request Volumes by Neighbourhood
 ## Overview
 
 This project involves geospatial analysis and forecasting of daily and monthly service request volumes by location. The ultimate goal is to optimize resource allocation and improve service delivery.
@@ -28,24 +27,41 @@ This project involves geospatial analysis and forecasting of daily and monthly s
 
 ## Data Source
 
-The data used in this project is sourced from the City of Edmonton Open Data Portal. There were two datasets used -- 311 Requests and Neighbourhoods Data. You can access the dataset and explore more information at 
- [City of Edmonton Open Data Portal](https://data.edmonton.ca/).
- 
+The data used in this project is sourced from the City of Edmonton Open Data Portal. Two datasets were used: **311 Requests** and **Neighbourhoods Data**. You can access the datasets and explore more information at [City of Edmonton Open Data Portal](https://data.edmonton.ca/).
+
 ## Trends Seen
 
 ### 1. Shift to Digital
 There has been a significant shift from phone requests to app-based requests over the last decade, indicating a growing preference for digital interaction.
 
 ### 2. Centralized Request Volume
-Downtown continues to be the area with the highest volume of requests, reflecting its high population density and activity levels.
+<p align="center">
+<img src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/2014-2024.png" alt="Request Volume 2014-2024">
+<img src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/2024.png" alt="Request Volume 2024">
+<br>
+<i>Downtown continues to be the area with the highest volume of requests, reflecting its high population density and activity levels.</i>
+</p>
 
 ### 3. Dominance of Roadway Maintenance
-The Roadways Maintenance and Operations unit is a major player in handling requests, managing nearly half of the total annual requests.
+<p align="center">
+<img src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/business%20unit.png" alt="Business Unit Requests">
+<br>
+<i>The Roadways Maintenance and Operations unit is a major player in handling requests, managing nearly half of the total annual requests.</i>
+</p>
 
 ## Prediction of Daily and Monthly Requests
-<p align="center" margin-top:20px margin-bottom:20px width=70%>
-<img src ="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/regression.png">
-</img>
+
+<p align="center">
+<img src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/regression.png" alt="Regression Analysis of Requests">
+</p>
+<p align="center">
+<img src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/scatter.png" alt="Scatter Plot of Requests">
+</p>
+
+## GeoPandas Usage
+
+<p align="center">
+<img src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/geo.png" alt="GeoPandas Usage">
 </p>
 
 ## Contributing
