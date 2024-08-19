@@ -33,8 +33,8 @@ The data used in this project is sourced from the City of Edmonton Open Data Por
 
 ### 1. Shift to Digital
 <p align="center">
-<img  width=50% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/2014-2024.png" alt="Request Volume 2014-2024">
-<img width=50% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/2024.png" alt="Request Volume 2024">
+<img  width=45% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/2014-2024.png" alt="Request Volume 2014-2024">
+<img width=45% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/2024.png" alt="Request Volume 2024">
 <br>
 <i>Downtown continues to be the area with the highest volume of requests, reflecting its high population density and activity levels.</i>
 </p>
@@ -43,7 +43,7 @@ There has been a significant shift from phone requests to app-based requests ove
 
 ### 2. Centralized Request Volume
 <p align="center">
-<img  width=40% src="[https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/2014-2024.png" alt="Request Volume 2014-2024](https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/neigh.png)">
+<img  width=40% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/2014-2024.png" alt="Request Volume 2014-2024">
 <br>
 <i>Downtown continues to be the area with the highest volume of requests, reflecting its high population density and activity levels.</i>
 </p>
