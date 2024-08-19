@@ -43,14 +43,14 @@ There has been a significant shift from phone requests to app-based requests ove
 
 ### 2. Centralized Request Volume
 <p align="center">
-<img  width=70% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/neigh.png">
+<img  width=80% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/neigh.png">
 <br>
 <i>Downtown continues to be the area with the highest volume of requests, reflecting its high population density and activity levels.</i>
 </p>
 
 ### 3. Dominance of Roadway Maintenance
 <p align="center">
-<img width=70% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/business%20unit.png" alt="Business Unit Requests">
+<img width=80% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/business%20unit.png" alt="Business Unit Requests">
 <br>
 <i>The Roadways Maintenance and Operations unit is a major player in handling requests, managing nearly half of the total annual requests.</i>
 </p>
