@@ -63,24 +63,16 @@ There has been a significant shift from phone requests to app-based requests ove
 <p align="center">
 <img src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/scatter.png" alt="Scatter Plot of Requests">
 </p>
-#### Model Performance Comparison (Daily)
 
-| Metric                         | Linear Regression | Random Forest | XGBoost       |
-|--------------------------------|--------------------|---------------|---------------|
-| **Training MSE**                | 0.9529             | 0.1440        | 0.7273        |
-| **Training R² Score**           | 0.6420             | 0.9459        | 0.7267        |
-| **Test MSE**                    | 0.6292             | 0.6750        | 0.6114        |
-| **Test R² Score**               | 0.6501             | 0.6246        | 0.6600        |
+#### Model Performance Comparison
 
+| Metric                         | Daily (Linear Regression) | Daily (Random Forest) | Daily (XGBoost) | Monthly (Linear Regression) | Monthly (Random Forest) | Monthly (XGBoost) |
+|--------------------------------|----------------------------|------------------------|-----------------|-----------------------------|-------------------------|-------------------|
+| **Training MSE**                | 0.9529                     | 0.1440                 | 0.7273          | 90.357                      | 8.560                   | 20.950            |
+| **Training R² Score**           | 0.6420                     | 0.9459                 | 0.7267          | 0.814                       | 0.982                   | 0.957             |
+| **Test MSE**                    | 0.6292                     | 0.6750                 | 0.6114          | 82.971                      | 38.306                  | 39.866            |
+| **Test R² Score**               | 0.6501                     | 0.6246                 | 0.6600          | 0.790                       | 0.903                   | 0.899             |
 
-#### Model Performance Comparison (Monthly Forecasting)
-
-| Metric                         | Linear Regression | Random Forest | XGBoost       |
-|--------------------------------|--------------------|---------------|---------------|
-| **Training MSE**                | 90.357             | 8.560         | 20.950        |
-| **Training R² Score**           | 0.814              | 0.982         | 0.957         |
-| **Test MSE**                    | 82.971             | 38.306        | 39.866        |
-| **Test R² Score**               | 0.790              | 0.903         | 0.899         |
 ### Explanation:
 
 - Regression Analysis: Three regression models were used for initial analysis - Linear Regression, Random Forest and XG Boost.
