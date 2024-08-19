@@ -64,8 +64,11 @@ There has been a significant shift from phone requests to app-based requests ove
 <img src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/scatter.png" alt="Scatter Plot of Requests">
 </p>
 
-#### Model Performance Comparison
+### Explanation:
 
+- Regression Analysis: Three regression models were used for initial analysis - Linear Regression, Random Forest, and XG Boost. The dataset was split into 80:20 ratio with data from 2023-2024 solely kept for training to reduce data leakage.
+- The initial regression without any hyper tuning yielded the following results:
+  
 | Metric                         | Daily (Linear Regression) | Daily (Random Forest) | Daily (XGBoost) | Monthly (Linear Regression) | Monthly (Random Forest) | Monthly (XGBoost) |
 |--------------------------------|----------------------------|------------------------|-----------------|-----------------------------|-------------------------|-------------------|
 | **Training MSE**                | 0.9529                     | 0.1440                 | 0.7273          | 90.357                      | 8.560                   | 20.950            |
@@ -73,21 +76,29 @@ There has been a significant shift from phone requests to app-based requests ove
 | **Test MSE**                    | 0.6292                     | 0.6750                 | 0.6114          | 82.971                      | 38.306                  | 39.866            |
 | **Test R² Score**               | 0.6501                     | 0.6246                 | 0.6600          | 0.790                       | 0.903                   | 0.899             |
 
-### Explanation:
+- Following this, the results after Hypertuning were,
 
-- Regression Analysis: Three regression models were used for initial analysis - Linear Regression, Random Forest and XG Boost.
-- The initial regression without any hyper tuning yielded the following results: 
+| Metric                         | Daily (XGBoost) | Monthly (Random Forest) |
+|--------------------------------|-----------------|-------------------------|
+| **Training MSE**                | 0.7558          | 12.0141                 |
+| **Training R² Score**           | 0.7160          | 0.9753                  |
+| **Testing MSE**                 | 0.6085          | 37.5353                 |
+| **Testing R² Score**            | 0.6616          | 0.9051                  |
 
 
-- Zero error plot: This scatter plot illustrates the relationship between different variables in the service request data. It may be used to visualize patterns or correlations in the data, such as the volume of requests over time or by location.
+## Zero Error Plot
 
-
+- **Description**: The zero error plot shows the relationship between predicted and actual values with zero error. This scatter plot helps visualize how well the model's predictions align with the actual data, providing insights into the model's accuracy and any potential biases.
+- **Purpose**: It is used to identify patterns or correlations in the data and evaluate the performance of predictive models. The plot can highlight how close the predictions are to the actual values and whether there are any systematic errors.
 
 ## GeoPandas Usage
-
 <p align="center">
 <img width=80% src="https://github.com/hrmn-preet/City-of-Edmonton-311-Requests-Analysis-/blob/main/Images/geo.png" alt="GeoPandas Usage">
 </p>
+
+- Geospatial Join was performed between **Neighbourhoods Dataset** and **311 Requests Dataset** to clean **Neighbourhoods and Ward Column** by inspecting if Location Coordinates of Request Origin falls inside any of the neighbourhood polygon.
+- In above image, the polygon represents **Queen Mary Park Neighbourhood** and the red dot represents row with **Location Coordinates as ***Longitude : -113.51157613474565 and Latitude: 53.556352514925194***
+- With Geospatial Join, we were able to inspect that these coordinates indeed fall in this polygon and confidently imputed the missing neighbourhood.
 
 
 ## Contributing
